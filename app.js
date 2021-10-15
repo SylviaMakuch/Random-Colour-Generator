@@ -1,13 +1,14 @@
-const button = document.querySelector('button');
-button.addEventListener('click', function (){
-    const r = Math.floor(Math.random()* 256);
-    const b = Math.floor(Math.random()* 256);
-    const g = Math.floor(Math.random()* 256);
+const button = document.querySelector("button");
+button.addEventListener("click", function () {
+  document.body.style.backgroundColor = getRandomRbg();
 
-    const randomColour = `rgb(${r},${g},${b})`;
-    document.body.style.backgroundColor = randomColour;
+  const textColour = document.querySelector("h2");
+  textColour.innerText = getRandomRbg();
+});
 
-    const textColour = document.querySelector('h2')
-    textColour.innerText = randomColour;
-})     
-    
+function getRandomRbg() {
+    const r = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    return `rgb(${r},${g},${b})`;
+}
