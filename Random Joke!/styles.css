@@ -1,0 +1,36 @@
+#div1 {
+    text-align: center;
+    font-family: 'Rock Salt', cursive;
+    font-size: 3em;
+    color: white;
+    }
+
+ul {
+    font-size: 1em;
+}
+
+body{
+    background-image: url(clouds.svg);
+}
+
+#clickMe {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    background-color: #02ffff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  #clickMe:hover {background-color: #3cdada}
+  
+  #clickMe:active {
+    background-color: #5193a3;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
