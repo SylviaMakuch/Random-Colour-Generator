@@ -10,4 +10,11 @@ const getDadJoke = async () => {
 getDadJoke()
 
 const btn = document.getElementById("clickMe");
-btn.addEventListener ("click", getDadJoke)
+btn.addEventListener ("click", getDadJoke);
+
+function removeAll(){
+    document.getElementById("jokes").innerHTML = "";
+}
+
+const reset =document.getElementById("reset");
+reset.addEventListener ("click", removeAll);
